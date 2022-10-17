@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Поменяем перменные</title>
+<script>
+function swap(x, y)
+{
+    var temp = x;
+    x = y;
+    y = temp;
+    document.form1.result1.value = x;
+    document.form1.result2.value = y;
+}
+</script>
+</head>
+<body>
+<p> Введите переменные: </p>
+<form name="form1">
+x: <input type="text" size=4 name="st1"> <hr>
+y: <input type="text" size=4 name="st2"> <hr>
+x: <input type="text" name="result1" onblur="swap(document.form1.st1.value, document.form1.st2.value)">
+y: <input type="text" name="result2" onblur="swap(document.form1.st1.value, document.form1.st2.value)">
+</form>
+</body>
+</html>

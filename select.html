@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>l до начала коордмнат</title>
+<script language="JavaScript">
+function l(x,y)
+{
+var result=(Math.sqrt(Math.pow(x,2)+Math.pow(y,2)));
+alert(result);
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<p>Расстояние до начала координат</p>
+<p> Введите координату х: <input type="text" size="4" name="x"> </p>
+<p> Введите координату y: <input type="text" size="4" name="y"> </p>
+<p>Расстояние</p>
+<input type="text" width="50" name="result" style="width: 220px" value="выдели меня или кликни два раза" onselect="l(document.form1.x.value, document.form1.y.value)"> 
+</form>
+</body>
+</html>

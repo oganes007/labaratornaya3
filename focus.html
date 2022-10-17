@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function S (Ax, Ay, Bx, By, Cx, Cy) 
+{
+var s = 0.5 * ( Math.abs( (Ax - Cx) * (By - Cy) - ( Bx - Cx) * (Ay - Cy) ) );
+document.form1.result.value = s;
+}
+</script>
+</head>
+<body>
+<p>Введите стороны треугольника</p>
+<form name="form1">
+Ax: <input type="text" size=5 name="st1"><hr>
+Ay: <input type="text" size=5 name="st2"><hr>
+Bx: <input type="text" size=5 name="st3"><hr>
+By: <input type="text" size=5 name="st4"><hr>
+Cx: <input type="text" size=5 name="st5"><hr>
+Cy: <input type="text" size=5 name="st6"><hr>
+<p>Площадь треугольника равна</p>
+<input type="text" name="result" onfocus="S(document.form1.st1.value, document.form1.st2.value,document.form1.st3.value, document.form1.st4.value,document.form1.st5.value, document.form1.st6.value)">
+</form>
+</bodyY>
+</html>
